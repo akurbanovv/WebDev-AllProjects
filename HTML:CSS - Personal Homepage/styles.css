@@ -1,0 +1,69 @@
+body {
+    background-color: #eae2b7;
+    width: 60%;
+    margin: auto;
+}
+
+#top_div {
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+.header_text {
+    color: #d62828;
+}
+
+.section_header {
+    color: #f77f00;
+}
+
+.classes_list{
+    list-style-type: circle;
+}
+
+.skills_list{
+    list-style-type: square;
+}
+
+.table, .list, #button_submit, #top_div {
+    margin-left: 20%;
+}
+
+.table {
+    margin-top: 25px;
+}
+.list {
+    padding-left: 25px;
+}
+
+th {
+    text-align: left;
+}
+
+.label_submit{
+    width: 100px;
+}
+
+#button_submit {
+    width: 200px;
+}
+
+#bottom_div {
+    height: 50px;
+}
+
+.section_div h3{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.section_div:hover {
+    background-color: #FCBF49;
+}

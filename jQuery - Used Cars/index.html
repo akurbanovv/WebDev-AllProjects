@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Used Cars</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--    Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+          crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"></script>
+
+    <!--    Google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=RocknRoll+One&display=swap"
+          rel="stylesheet">
+
+    <!--    fontawesome-->
+    <script src="https://kit.fontawesome.com/e5b5eed843.js" crossorigin="anonymous"></script>
+
+    <!--    Google jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="javascript/data10.js" defer></script>
+    <script src="javascript/script.js" defer></script>
+</head>
+<body class="container">
+
+<section id="header_section">
+    <h1>Used Cars</h1>
+</section>
+<div class="row">
+    <div id="selection_section" class="col-3">
+        <!-- search box-->
+        <div class="input-group mb-3">
+            <input id="search_box" type="search" class="form-control" placeholder="Search cars..." aria-label="Search"
+                   aria-describedby="basic-addon2" onSearch="update_cars()">
+            <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+        </div>
+
+        <!-- like and dislike radio buttons-->
+        <div style="padding: 5% 0">
+            <h5>Filter</h5>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="like_dislikes" id="all_cars" value="all"
+                       onclick="update_cars()"
+                       checked>
+                <label class="form-check-label" for="all_cars">
+                    All cars
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="like_dislikes" id="all_likes" value="like"
+                       onclick="update_cars()">
+                <label class="form-check-label" for="all_likes">
+                    Likes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="like_dislikes" id="all_dislikes" value="dislike"
+                       onclick="update_cars()">
+                <label class="form-check-label" for="all_dislikes">
+                    Dislikes
+                </label>
+            </div>
+        </div>
+
+        <!-- brand list-->
+        <div>
+            <h5>All brands</h5>
+            <ul id="make_list" class="list-group">
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- car list-->
+    <div id="car_section" class="col-9">
+        <div id="car_grid" class="row">
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

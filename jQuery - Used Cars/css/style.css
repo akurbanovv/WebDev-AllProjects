@@ -1,0 +1,29 @@
+:root {
+    /* CSS HEX */
+    --imperial-red: #e63946ff;
+    --honeydew: #f1faeeff;
+    --powder-blue: #a8dadcff;
+    --celadon-blue: #457b9dff;
+    --prussian-blue: #1d3557ff;
+}
+
+.border {
+    height: 200px;
+}
+
+.odd_row {
+    color: var(--prussian-blue);
+    background-color: var(--powder-blue);
+    overflow: auto;
+
+}
+
+.even_row  {
+    color: var(--prussian-blue);
+    background-color: var(--honeydew);
+    overflow: auto;
+}
+
+.delete_button{
+    color: white !important;
+}

@@ -1,0 +1,118 @@
+:root {
+    --light-cornflower-blue: #8ecae6ff;
+    --blue-green: #219ebcff;
+    --prussian-blue: #023047ff;
+    --honey-yellow: #ffb703ff;
+    --orange: #fb8500ff;
+}
+
+#cardByYear img {
+    height: 500px;
+}
+
+* {
+    font-family: 'Anton', sans-serif;
+}
+
+nav {
+    background-color: var(--honey-yellow)
+}
+
+#splash {
+    padding-top: 1%;
+}
+
+#splash img {
+    width: 50px;
+    float: left;
+    object-fit: cover;
+
+}
+
+#year_buttons {
+    background-color: var(--blue-green);
+    color: white;
+}
+
+#year_buttons h1 {
+    padding-top: 2%;
+    padding-left: 30px;
+}
+
+#year_buttons p {
+    padding-left: 30px;
+}
+
+#year_buttons button {
+    margin-bottom: 3%;
+    width: 70%;
+    text-align: center;
+}
+
+#year_buttons li {
+    text-align: center;
+}
+
+#buy_cards {
+    padding-top: 3%;
+    text-align: center;
+}
+
+#buy_cards img {
+    height: 250px;
+}
+
+#buy_cards p {
+    margin-top: 5px;
+}
+
+#buy_cards button {
+    margin-top: -10px;
+    width: 70%;
+}
+
+#buy_cards div div {
+    margin-top: 20px;
+}
+
+#cards {
+    padding-top: 3%;
+}
+
+.card-header {
+    background-color: var(--prussian-blue);
+    color: var(--orange);
+}
+
+#carouselExampleSlidesOnly img {
+    width: 100%;
+    height:450px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+}
+
+#carouselExampleSlidesOnly {
+    margin-bottom: 10px;
+}
+
+#cards h2 {
+    font-family: 'Stick', sans-serif;
+    text-align: center;
+}
+
+#cards .carousel-inner {
+    height: 500px;
+}
+
+#footer {
+    height: 80px;
+    background-color: var(--honey-yellow);
+    color: var(--prussian-blue);
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+

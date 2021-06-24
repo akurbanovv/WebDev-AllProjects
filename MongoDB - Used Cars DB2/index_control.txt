@@ -1,0 +1,57 @@
+<section id="control_buttons">
+    <div>
+        <div class="input-group mb-3">
+            <input id="search_box" type="search" class="form-control" placeholder="Search cars..."
+                   aria-label="Search"
+                   aria-describedby="basic-addon2" onsearch="searchCar()">
+            <span class="input-group-text" id="basic-addon2" onclick="searchCar()"><i
+                    class="fas fa-search"></i></span>
+        </div>
+        <div>
+            <div class="row">
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Min year</span>
+                        <input type="Number" class="form-control" id="min_year"
+                               aria-describedby="min year">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Max year</span>
+                        <input type="Number" class="form-control" id="max_year"
+                               aria-describedby="max year">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Min price</span>
+                        <input type="Number" class="form-control" id="min_price"
+                               aria-describedby="min price">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Max price</span>
+                        <input type="Number" class="form-control" id="max_price"
+                               aria-describedby="max price">
+                    </div>
+                </div>
+                <div class="col">
+                    <input id="show_available" type="checkbox" class="btn-check">
+                    <label class="btn btn-outline-success" for="show_available">Available cars only</label>
+                </div>
+                <div class="col-lg-2">
+                    <div class="input-group mb-3">
+                        <button class="btn btn-secondary" onclick="searchCar()">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="input-group mb-3 d-flex justify-content-end">
+        <button class="btn btn-info" onclick="addNewCar()">Create a New Car</button>
+    </div>
+</section>

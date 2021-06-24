@@ -1,0 +1,22 @@
+:root {
+    /* CSS HEX */
+    --charcoal: #264653ff;
+    --persian-green: #2a9d8fff;
+    --orange-yellow-crayola: #e9c46aff;
+    --sandy-brown: #f4a261ff;
+    --burnt-sienna: #e76f51ff;
+}
+
+#message_body {
+    width: 60%;
+    height: 400px;
+    margin-left: 20%;
+    margin-top: 10%;
+    text-align: center;
+    padding: 5%;
+}
+
+#message_body a{
+    margin-top: 10%;
+    width: 150px;
+}
